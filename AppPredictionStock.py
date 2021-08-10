@@ -29,8 +29,6 @@ def main():
     stocks = ("FB", "AAPL", "AMZN", "MSFT", "GOOG", "HON", "DTE", "VOD", "HEI", "SAP")
     selected_stock = st.selectbox("Select STOCK", stocks)
 
-    data_load_state = st.text("Loading data...")
-
     @st.cache
     def load_data(ticker):
         data = yf.download(ticker, START, TODAY)
@@ -76,6 +74,10 @@ def main():
     plot_raw_data()
 
 # FORECAST
+    style1 = '<p style="color:Red; font-size: 20px;">Loading data...</p>'
+    style2 = '<p style="color:Green; font-size: 20px;">Loading data... DONE!</p>'
+    data_load_state = st.markdown(style1, unsafe_allow_html=True)
+
     n_days = st.slider("Days of prediction:", 1, 1000, 180)
     period = n_days
 
@@ -87,7 +89,8 @@ def main():
     future = m.make_future_dataframe(periods=period)
     forecast = m.predict(future)
 
-    data_load_state.text("Loading data... DONE!")
+    data_load_state.markdown(style2, unsafe_allow_html=True)
+    
     st.subheader(f"{stock_names(selected_stock)} Forecast")
     st.write(forecast.tail(5))
 
