@@ -19,7 +19,7 @@ def main():
 
     # Image
     from PIL import Image
-    image = Image.open('C:/Users/HP/OneDrive/Documents/HTML & CSS/data.analyst.com/images/StockCorrected.jpg')
+    image = Image.open('./StockCorrected.jpg')
     st.image(image, caption='Stock Prediction with FB Prophet', use_column_width=True)
 
 # LOADING
