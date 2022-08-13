@@ -1,5 +1,7 @@
 
-# cd C:\Users\HP\OneDrive\Documents\Python Anaconda\Streamlit_Stock_App
+# STREAMLIT
+
+# cd "/Users/hp/OneDrive/Documents/Python Anaconda/Streamlit_Stock_App"
 # streamlit run AppPredictionStock.py
 
 # pip install streamlit --upgrade 0.79
