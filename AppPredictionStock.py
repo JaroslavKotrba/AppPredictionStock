@@ -27,7 +27,7 @@ def main():
     START = "2015-01-01"
     TODAY = date.today().strftime("%Y-%m-%d")
 
-    stocks = ("FB", "AAPL", "AMZN", "MSFT", "GOOG", "HON", "DTE", "VOD", "HEI", "SAP")
+    stocks = ("META", "AAPL", "AMZN", "MSFT", "GOOG", "HON", "DTE", "VOD", "HEI", "SAP")
     selected_stock = st.selectbox("Select STOCK", stocks)
 
     @st.cache
@@ -40,8 +40,8 @@ def main():
     data = load_data(selected_stock)
 
     def stock_names(x):
-        if x == "FB":
-            return "Facebook"
+        if x == "META":
+            return "Meta"
         elif x == "AAPL":
             return "Apple"
         elif x == "AMZN":
