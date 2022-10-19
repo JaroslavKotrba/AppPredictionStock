@@ -84,6 +84,7 @@ def main():
 
     df_train = data[['Date', 'Close']]
     df_train = df_train.rename(columns={"Date": "ds", "Close": "y"})
+    df_train['ds'] = df_train['ds'].apply(lambda x: x.strftime('%Y-%m-%d %H:%M:%S')) #
 
     m = Prophet(weekly_seasonality=False)
     m.fit(df_train)
