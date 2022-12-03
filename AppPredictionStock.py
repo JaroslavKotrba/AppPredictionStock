@@ -24,7 +24,7 @@ def main():
     st.image(image, caption='Stock Prediction with FB Prophet', use_column_width=True)
 
 # LOADING
-    START = "2015-01-01"
+    START = "2018-01-01"
     TODAY = date.today().strftime("%Y-%m-%d")
 
     stocks = ("META", "AAPL", "AMZN", "MSFT", "GOOG", "HON", "DTE", "VOD", "HEI", "SAP")
