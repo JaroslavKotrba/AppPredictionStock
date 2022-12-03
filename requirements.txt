@@ -1,5 +1,5 @@
 streamlit~=0.79.0
-pandas~=1.2.1
+pandas~=1.4.1
 pillow~=8.1.0
 yfinance~=0.1.63
 prophet~=1.1
