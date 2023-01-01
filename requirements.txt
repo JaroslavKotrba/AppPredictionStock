@@ -4,3 +4,4 @@ pillow~=8.1.0
 yfinance~=0.1.63
 prophet~=1.1
 plotly~=5.1.0
+numpy~=1.23.1
