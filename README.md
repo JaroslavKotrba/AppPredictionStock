@@ -1,2 +1,2 @@
 # AppPredictionStock
-TO SEE THE OUTPUT: https://share.streamlit.io/jaroslavkotrba/apppredictionstock/main/AppPredictionStock.py
+TO SEE THE OUTPUT: https://apppredictionstock-8179dba5d3f3.herokuapp.com
